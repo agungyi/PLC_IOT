@@ -1,0 +1,2187 @@
+[
+    {
+        "id": "60f66b859a664627",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": true,
+        "info": ""
+    },
+    {
+        "id": "1949597f20b45e64",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": true,
+        "info": ""
+    },
+    {
+        "id": "19b63a95f6e28d2d",
+        "type": "tab",
+        "label": "어플->아두이노->mqtt->node-red->데시보드",
+        "disabled": true,
+        "info": ""
+    },
+    {
+        "id": "ca6a7ac2d6048642",
+        "type": "tab",
+        "label": "어플->아두이노->mqtt->mysql->node-red->데시보드",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "4ccf2553a3e0b2f2",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "pcct1000",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "92ce48d6ef7c84cf",
+        "type": "mqtt-broker",
+        "name": "chaeyiseok",
+        "broker": "broker.mqtt-dashboard.com",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "ceaa91cc6a243182",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "6408d445523cc52f",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "c34841572223fcea",
+        "type": "ui_group",
+        "name": "Relay#1",
+        "tab": "ceaa91cc6a243182",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "e6ed4730084381e6",
+        "type": "ui_group",
+        "name": "Relay#2",
+        "tab": "ceaa91cc6a243182",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "83c0d24b403b84f0",
+        "type": "ui_group",
+        "name": "Relay#3",
+        "tab": "ceaa91cc6a243182",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "cb76ac9f7830d148",
+        "type": "ui_group",
+        "name": "Relay#4",
+        "tab": "ceaa91cc6a243182",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "c70094facb6fba24",
+        "type": "mysql",
+        "z": "60f66b859a664627",
+        "mydb": "4ccf2553a3e0b2f2",
+        "name": "",
+        "x": 420,
+        "y": 240,
+        "wires": [
+            [
+                "1e416718604a78ee"
+            ]
+        ]
+    },
+    {
+        "id": "ce2bb44dad562c8e",
+        "type": "inject",
+        "z": "60f66b859a664627",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "select *from sensor",
+        "payloadType": "date",
+        "x": 200,
+        "y": 240,
+        "wires": [
+            [
+                "c70094facb6fba24"
+            ]
+        ]
+    },
+    {
+        "id": "1e416718604a78ee",
+        "type": "debug",
+        "z": "60f66b859a664627",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 610,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "9524cacfbbeb5d17",
+        "type": "inject",
+        "z": "60f66b859a664627",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "insert sensor values(1,100,'5')",
+        "payloadType": "date",
+        "x": 200,
+        "y": 480,
+        "wires": [
+            [
+                "6f7e89be8e036ea4"
+            ]
+        ]
+    },
+    {
+        "id": "e13502b63d0ea0cc",
+        "type": "mysql",
+        "z": "60f66b859a664627",
+        "mydb": "4ccf2553a3e0b2f2",
+        "name": "",
+        "x": 660,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6f7e89be8e036ea4",
+        "type": "function",
+        "z": "60f66b859a664627",
+        "name": "",
+        "func": "var stamp = new Date().getTime();\nmsg.topic=\"insert into sensor values(1,100,'\"+stamp+\"')\";\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 480,
+        "wires": [
+            [
+                "e13502b63d0ea0cc"
+            ]
+        ]
+    },
+    {
+        "id": "57ae08f8f9672cd1",
+        "type": "mqtt in",
+        "z": "1949597f20b45e64",
+        "name": "",
+        "topic": "pcct1000/out",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "92ce48d6ef7c84cf",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 340,
+        "y": 240,
+        "wires": [
+            [
+                "18bc0a9cdd1140fe"
+            ]
+        ]
+    },
+    {
+        "id": "18bc0a9cdd1140fe",
+        "type": "ui_text",
+        "z": "1949597f20b45e64",
+        "group": "c34841572223fcea",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "text",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 670,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "fb8949ae3ce3be28",
+        "type": "mqtt out",
+        "z": "1949597f20b45e64",
+        "name": "",
+        "topic": "pcct1000/in",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "92ce48d6ef7c84cf",
+        "x": 690,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "6fbd3a3cbcb8c4f0",
+        "type": "function",
+        "z": "1949597f20b45e64",
+        "name": "",
+        "func": "for(var i=0; i <100; i++)\n  node.send({payload:i});\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 400,
+        "wires": [
+            [
+                "8af08c788d8c90f4"
+            ]
+        ]
+    },
+    {
+        "id": "8af08c788d8c90f4",
+        "type": "delay",
+        "z": "1949597f20b45e64",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "x": 600,
+        "y": 400,
+        "wires": [
+            [
+                "cbd7f8a7406ea77d"
+            ]
+        ]
+    },
+    {
+        "id": "cbd7f8a7406ea77d",
+        "type": "debug",
+        "z": "1949597f20b45e64",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 860,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "0e7d20f385c13893",
+        "type": "function",
+        "z": "19b63a95f6e28d2d",
+        "name": "counter1",
+        "func": "// Define Varialbe and get stored slow value\n// if there is no stored value, then the value is 0\nvar counter1 = flow.get(\"counter1\") || 0\n\n// add 1 to the counter value\ncounter1 ++\n\n// save the counter value in the flow variable\nflow.set(\"counter1\",counter1)\n\n// set msg.payload to counter value\nmsg.payload = counter1\n\n//return the message object\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 200,
+        "wires": [
+            [
+                "8726bec79e2140e2",
+                "960b0aea31242de1"
+            ]
+        ]
+    },
+    {
+        "id": "a294739bd7f1937c",
+        "type": "change",
+        "z": "19b63a95f6e28d2d",
+        "name": "reset1",
+        "rules": [
+            {
+                "t": "set",
+                "p": "counter1",
+                "pt": "flow",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 430,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f539678cc8f60634",
+        "type": "mqtt in",
+        "z": "19b63a95f6e28d2d",
+        "name": "",
+        "topic": "pcct1000/out1",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "92ce48d6ef7c84cf",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 150,
+        "y": 200,
+        "wires": [
+            [
+                "0e7d20f385c13893"
+            ]
+        ]
+    },
+    {
+        "id": "8726bec79e2140e2",
+        "type": "ui_text",
+        "z": "19b63a95f6e28d2d",
+        "group": "c34841572223fcea",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Relay#1 Data",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 780,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "09644d5d3e6cf0b8",
+        "type": "mqtt in",
+        "z": "60f66b859a664627",
+        "name": "",
+        "topic": "pcct1000/out",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "92ce48d6ef7c84cf",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 190,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4e77249f339798ca",
+        "type": "delay",
+        "z": "60f66b859a664627",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "2",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "x": 420,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ed96d892956c7b20",
+        "type": "function",
+        "z": "19b63a95f6e28d2d",
+        "name": "",
+        "func": "msg.payload = 0  \n   \nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 500,
+        "wires": [
+            [
+                "8726bec79e2140e2",
+                "960b0aea31242de1"
+            ]
+        ]
+    },
+    {
+        "id": "1216ca12c3df44a4",
+        "type": "ui_button",
+        "z": "19b63a95f6e28d2d",
+        "name": "",
+        "group": "c34841572223fcea",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Reset 1",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "date",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 160,
+        "y": 500,
+        "wires": [
+            [
+                "ed96d892956c7b20",
+                "a294739bd7f1937c"
+            ]
+        ]
+    },
+    {
+        "id": "960b0aea31242de1",
+        "type": "ui_chart",
+        "z": "19b63a95f6e28d2d",
+        "name": "",
+        "group": "c34841572223fcea",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "chart 1",
+        "chartType": "bar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "1",
+        "ymax": "10",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 770,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f1a9c586a0c2275e",
+        "type": "function",
+        "z": "19b63a95f6e28d2d",
+        "name": "counter2",
+        "func": "// Define Varialbe and get stored slow value\n// if there is no stored value, then the value is 0\nvar counter2 = flow.get(\"counter2\") || 0\n\n// add 1 to the counter value\ncounter2 ++\n\n// save the counter value in the flow variable\nflow.set(\"counter2\",counter2)\n\n// set msg.payload to counter value\nmsg.payload = counter2\n\n//return the message object\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 260,
+        "wires": [
+            [
+                "e4945b7b5e519236",
+                "13e73b6fa3821027"
+            ]
+        ]
+    },
+    {
+        "id": "b36396dfbe8f5b27",
+        "type": "mqtt in",
+        "z": "19b63a95f6e28d2d",
+        "name": "",
+        "topic": "pcct1000/out2",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "92ce48d6ef7c84cf",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 150,
+        "y": 260,
+        "wires": [
+            [
+                "f1a9c586a0c2275e"
+            ]
+        ]
+    },
+    {
+        "id": "e4945b7b5e519236",
+        "type": "ui_text",
+        "z": "19b63a95f6e28d2d",
+        "group": "e6ed4730084381e6",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Relay#2 Data",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 780,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "5a144269d06c420f",
+        "type": "function",
+        "z": "19b63a95f6e28d2d",
+        "name": "counter3",
+        "func": "// Define Varialbe and get stored slow value\n// if there is no stored value, then the value is 0\nvar counter3 = flow.get(\"counter3\") || 0\n\n// add 1 to the counter value\ncounter3 ++\n\n// save the counter value in the flow variable\nflow.set(\"counter3\",counter3)\n\n// set msg.payload to counter value\nmsg.payload = counter3\n\n//return the message object\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 320,
+        "wires": [
+            [
+                "2a65abf7b197d19a",
+                "18dd46ba5b6a5b7c"
+            ]
+        ]
+    },
+    {
+        "id": "c2f3de24303cf527",
+        "type": "mqtt in",
+        "z": "19b63a95f6e28d2d",
+        "name": "",
+        "topic": "pcct1000/out3",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "92ce48d6ef7c84cf",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 150,
+        "y": 320,
+        "wires": [
+            [
+                "5a144269d06c420f"
+            ]
+        ]
+    },
+    {
+        "id": "2a65abf7b197d19a",
+        "type": "ui_text",
+        "z": "19b63a95f6e28d2d",
+        "group": "83c0d24b403b84f0",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Relay#3 Data",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 780,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "a349b754059ceb32",
+        "type": "function",
+        "z": "19b63a95f6e28d2d",
+        "name": "counter4",
+        "func": "// Define Varialbe and get stored slow value\n// if there is no stored value, then the value is 0\nvar counter4 = flow.get(\"counter4\") || 0\n\n// add 1 to the counter value\ncounter4 ++\n\n// save the counter value in the flow variable\nflow.set(\"counter4\",counter4)\n\n// set msg.payload to counter value\nmsg.payload = counter4\n\n//return the message object\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 380,
+        "wires": [
+            [
+                "e2158bafee377a17",
+                "734ded4533683e53"
+            ]
+        ]
+    },
+    {
+        "id": "4c2b852c2c07c085",
+        "type": "mqtt in",
+        "z": "19b63a95f6e28d2d",
+        "name": "",
+        "topic": "pcct1000/out4",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "92ce48d6ef7c84cf",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 150,
+        "y": 380,
+        "wires": [
+            [
+                "a349b754059ceb32"
+            ]
+        ]
+    },
+    {
+        "id": "e2158bafee377a17",
+        "type": "ui_text",
+        "z": "19b63a95f6e28d2d",
+        "group": "cb76ac9f7830d148",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Relay#4 Data",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 780,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "b545548ac64c0a4e",
+        "type": "change",
+        "z": "19b63a95f6e28d2d",
+        "name": "reset2",
+        "rules": [
+            {
+                "t": "set",
+                "p": "counter2",
+                "pt": "flow",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 430,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a303a14fe9842ff7",
+        "type": "change",
+        "z": "19b63a95f6e28d2d",
+        "name": "reset3",
+        "rules": [
+            {
+                "t": "set",
+                "p": "counter3",
+                "pt": "flow",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 430,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f283fada69f54a8f",
+        "type": "change",
+        "z": "19b63a95f6e28d2d",
+        "name": "reset4",
+        "rules": [
+            {
+                "t": "set",
+                "p": "counter4",
+                "pt": "flow",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 430,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "13e73b6fa3821027",
+        "type": "ui_chart",
+        "z": "19b63a95f6e28d2d",
+        "name": "",
+        "group": "e6ed4730084381e6",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "chart 2",
+        "chartType": "bar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "1",
+        "ymax": "10",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 770,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "18dd46ba5b6a5b7c",
+        "type": "ui_chart",
+        "z": "19b63a95f6e28d2d",
+        "name": "",
+        "group": "83c0d24b403b84f0",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "chart 3",
+        "chartType": "bar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "1",
+        "ymax": "10",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 771,
+        "y": 578,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "734ded4533683e53",
+        "type": "ui_chart",
+        "z": "19b63a95f6e28d2d",
+        "name": "",
+        "group": "cb76ac9f7830d148",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "chart 4",
+        "chartType": "bar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "1",
+        "ymax": "10",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 770,
+        "y": 645,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "34fe9f90c0005f60",
+        "type": "function",
+        "z": "19b63a95f6e28d2d",
+        "name": "",
+        "func": "msg.payload = 0  \n   \nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 435,
+        "y": 605,
+        "wires": [
+            [
+                "e4945b7b5e519236",
+                "13e73b6fa3821027"
+            ]
+        ]
+    },
+    {
+        "id": "edaef15d21ef7674",
+        "type": "function",
+        "z": "19b63a95f6e28d2d",
+        "name": "",
+        "func": "msg.payload = 0  \n   \nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 700,
+        "wires": [
+            [
+                "2a65abf7b197d19a",
+                "18dd46ba5b6a5b7c"
+            ]
+        ]
+    },
+    {
+        "id": "051aa8bd0dbf025e",
+        "type": "function",
+        "z": "19b63a95f6e28d2d",
+        "name": "",
+        "func": "msg.payload = 0  \n   \nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 800,
+        "wires": [
+            [
+                "e2158bafee377a17",
+                "734ded4533683e53"
+            ]
+        ]
+    },
+    {
+        "id": "ed31f74febc73a09",
+        "type": "ui_button",
+        "z": "19b63a95f6e28d2d",
+        "name": "",
+        "group": "e6ed4730084381e6",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Reset 2",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "date",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 160,
+        "y": 600,
+        "wires": [
+            [
+                "34fe9f90c0005f60",
+                "b545548ac64c0a4e"
+            ]
+        ]
+    },
+    {
+        "id": "83ec4be3751314b5",
+        "type": "ui_button",
+        "z": "19b63a95f6e28d2d",
+        "name": "",
+        "group": "83c0d24b403b84f0",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Reset 3",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "date",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 160,
+        "y": 700,
+        "wires": [
+            [
+                "edaef15d21ef7674",
+                "a303a14fe9842ff7"
+            ]
+        ]
+    },
+    {
+        "id": "f28291829b12945a",
+        "type": "ui_button",
+        "z": "19b63a95f6e28d2d",
+        "name": "",
+        "group": "cb76ac9f7830d148",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Reset 4",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "date",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 160,
+        "y": 800,
+        "wires": [
+            [
+                "051aa8bd0dbf025e",
+                "f283fada69f54a8f"
+            ]
+        ]
+    },
+    {
+        "id": "dfe973cab99e6b52",
+        "type": "mysql",
+        "z": "19b63a95f6e28d2d",
+        "mydb": "4ccf2553a3e0b2f2",
+        "name": "",
+        "x": 480,
+        "y": 40,
+        "wires": [
+            [
+                "8460fa897c144c2d"
+            ]
+        ]
+    },
+    {
+        "id": "ed5b4fc95be2850d",
+        "type": "inject",
+        "z": "19b63a95f6e28d2d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "select * from Relay1 where num=1 order by var desc limit 1;",
+        "payloadType": "date",
+        "x": 240,
+        "y": 40,
+        "wires": [
+            [
+                "dfe973cab99e6b52"
+            ]
+        ]
+    },
+    {
+        "id": "8460fa897c144c2d",
+        "type": "debug",
+        "z": "19b63a95f6e28d2d",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 670,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "68670f86978e56b8",
+        "type": "inject",
+        "z": "19b63a95f6e28d2d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "insert Relay1 values(1,4)",
+        "payloadType": "date",
+        "x": 240,
+        "y": 100,
+        "wires": [
+            [
+                "c6c834ecd19b54bc"
+            ]
+        ]
+    },
+    {
+        "id": "c6c834ecd19b54bc",
+        "type": "mysql",
+        "z": "19b63a95f6e28d2d",
+        "mydb": "4ccf2553a3e0b2f2",
+        "name": "",
+        "x": 700,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b9c42ff7f1f4f57d",
+        "type": "function",
+        "z": "19b63a95f6e28d2d",
+        "name": "",
+        "func": "var stamp = new Date().getTime();\nmsg.topic=\"insert into sensor values(1,100,'\"+stamp+\"')\";\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fa02dc58f5325989",
+        "type": "mysql",
+        "z": "ca6a7ac2d6048642",
+        "mydb": "4ccf2553a3e0b2f2",
+        "name": "",
+        "x": 760,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2e3541ae967e2147",
+        "type": "mqtt in",
+        "z": "ca6a7ac2d6048642",
+        "name": "",
+        "topic": "pcct1000/out1",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "92ce48d6ef7c84cf",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 210,
+        "y": 60,
+        "wires": [
+            [
+                "104ab5855aa85463"
+            ]
+        ]
+    },
+    {
+        "id": "ea036631c6007a93",
+        "type": "function",
+        "z": "ca6a7ac2d6048642",
+        "name": "",
+        "func": "\nmsg.topic = \"insert into relay1(data) value('\"+msg.payload+\"')\";\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 60,
+        "wires": [
+            [
+                "fa02dc58f5325989"
+            ]
+        ]
+    },
+    {
+        "id": "104ab5855aa85463",
+        "type": "function",
+        "z": "ca6a7ac2d6048642",
+        "name": "counter1",
+        "func": "// Define Varialbe and get stored slow value\n// if there is no stored value, then the value is 0\nvar counter1 = flow.get(\"counter1\") || 0\n\n// add 1 to the counter value\ncounter1 ++\n\n// save the counter value in the flow variable\nflow.set(\"counter1\",counter1)\n\n// set msg.payload to counter value\nmsg.payload = counter1\n\n//return the message object\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 60,
+        "wires": [
+            [
+                "ea036631c6007a93"
+            ]
+        ]
+    },
+    {
+        "id": "782d55c8479aebf3",
+        "type": "mysql",
+        "z": "ca6a7ac2d6048642",
+        "mydb": "4ccf2553a3e0b2f2",
+        "name": "",
+        "x": 400,
+        "y": 120,
+        "wires": [
+            [
+                "831b26979a7fc9fb"
+            ]
+        ]
+    },
+    {
+        "id": "1c8997e279cc2f76",
+        "type": "ui_button",
+        "z": "ca6a7ac2d6048642",
+        "name": "",
+        "group": "c34841572223fcea",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Data 확인",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "select data from relay1  order by data desc limit 1",
+        "topicType": "str",
+        "x": 200,
+        "y": 120,
+        "wires": [
+            [
+                "782d55c8479aebf3"
+            ]
+        ]
+    },
+    {
+        "id": "831b26979a7fc9fb",
+        "type": "function",
+        "z": "ca6a7ac2d6048642",
+        "name": "",
+        "func": "var y=[];\nvar x=[];\n\nfor(var i = 0;i<msg.payload.length;i++){\n    y.push(msg.payload[i].data);\n   // x.push(msg.payload[i].date);\n}\n\nmsg.payload = [{\n    series:\"\",\n    data:[y],\n    labels:x\n    \n    \n}]\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 120,
+        "wires": [
+            [
+                "9a4428f37b318fe6"
+            ]
+        ]
+    },
+    {
+        "id": "9a4428f37b318fe6",
+        "type": "ui_chart",
+        "z": "ca6a7ac2d6048642",
+        "name": "",
+        "group": "c34841572223fcea",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "label": "그래프",
+        "chartType": "bar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "20",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 730,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "48b6a8a7bb8ae1c0",
+        "type": "ui_button",
+        "z": "ca6a7ac2d6048642",
+        "name": "",
+        "group": "c34841572223fcea",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "리셋",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "date",
+        "topic": "UPDATE `relay1` SET data='0';",
+        "topicType": "str",
+        "x": 190,
+        "y": 180,
+        "wires": [
+            [
+                "d94c2877e374d37e",
+                "782d55c8479aebf3"
+            ]
+        ]
+    },
+    {
+        "id": "d94c2877e374d37e",
+        "type": "change",
+        "z": "ca6a7ac2d6048642",
+        "name": "reset1",
+        "rules": [
+            {
+                "t": "set",
+                "p": "counter1",
+                "pt": "flow",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 350,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dac1df949b867d1a",
+        "type": "mysql",
+        "z": "ca6a7ac2d6048642",
+        "mydb": "4ccf2553a3e0b2f2",
+        "name": "",
+        "x": 760,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "82f368ab7921613c",
+        "type": "mqtt in",
+        "z": "ca6a7ac2d6048642",
+        "name": "",
+        "topic": "pcct1000/out2",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "92ce48d6ef7c84cf",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 210,
+        "y": 260,
+        "wires": [
+            [
+                "0122ba4b3a5bf7fd"
+            ]
+        ]
+    },
+    {
+        "id": "7ad70a04ad883fad",
+        "type": "function",
+        "z": "ca6a7ac2d6048642",
+        "name": "",
+        "func": "\nmsg.topic = \"insert into relay1(data2) value('\"+msg.payload+\"')\";\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 260,
+        "wires": [
+            [
+                "dac1df949b867d1a"
+            ]
+        ]
+    },
+    {
+        "id": "0122ba4b3a5bf7fd",
+        "type": "function",
+        "z": "ca6a7ac2d6048642",
+        "name": "counter2",
+        "func": "// Define Varialbe and get stored slow value\n// if there is no stored value, then the value is 0\nvar counter2 = flow.get(\"counter2\") || 0\n\n// add 1 to the counter value\ncounter2 ++\n\n// save the counter value in the flow variable\nflow.set(\"counter2\",counter2)\n\n// set msg.payload to counter value\nmsg.payload = counter2\n\n//return the message object\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 260,
+        "wires": [
+            [
+                "7ad70a04ad883fad"
+            ]
+        ]
+    },
+    {
+        "id": "61602bac218ec9cc",
+        "type": "mysql",
+        "z": "ca6a7ac2d6048642",
+        "mydb": "4ccf2553a3e0b2f2",
+        "name": "",
+        "x": 380,
+        "y": 320,
+        "wires": [
+            [
+                "eeb946fabae03c06"
+            ]
+        ]
+    },
+    {
+        "id": "ae95cbf82fd03197",
+        "type": "ui_button",
+        "z": "ca6a7ac2d6048642",
+        "name": "",
+        "group": "e6ed4730084381e6",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Data 확인",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "select data2 from relay1  order by data2 desc limit 1",
+        "topicType": "str",
+        "x": 200,
+        "y": 320,
+        "wires": [
+            [
+                "61602bac218ec9cc"
+            ]
+        ]
+    },
+    {
+        "id": "eeb946fabae03c06",
+        "type": "function",
+        "z": "ca6a7ac2d6048642",
+        "name": "",
+        "func": "var y=[];\nvar x=[];\n\nfor(var i = 0;i<msg.payload.length;i++){\n    y.push(msg.payload[i].data2);\n   // x.push(msg.payload[i].date);\n}\n\nmsg.payload = [{\n    series:\"\",\n    data:[y],\n    labels:x\n    \n    \n}]\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 320,
+        "wires": [
+            [
+                "b444db8241d05100"
+            ]
+        ]
+    },
+    {
+        "id": "b444db8241d05100",
+        "type": "ui_chart",
+        "z": "ca6a7ac2d6048642",
+        "name": "",
+        "group": "e6ed4730084381e6",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "label": "그래프",
+        "chartType": "bar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "20",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 730,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0f8b7650a42e4760",
+        "type": "ui_button",
+        "z": "ca6a7ac2d6048642",
+        "name": "",
+        "group": "e6ed4730084381e6",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "리셋",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "date",
+        "topic": "UPDATE `relay1` SET data2='0';",
+        "topicType": "str",
+        "x": 190,
+        "y": 380,
+        "wires": [
+            [
+                "b7890dabb24ba9cb",
+                "61602bac218ec9cc"
+            ]
+        ]
+    },
+    {
+        "id": "b7890dabb24ba9cb",
+        "type": "change",
+        "z": "ca6a7ac2d6048642",
+        "name": "reset2",
+        "rules": [
+            {
+                "t": "set",
+                "p": "counter2",
+                "pt": "flow",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 350,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6e3203df58fcedce",
+        "type": "mysql",
+        "z": "ca6a7ac2d6048642",
+        "mydb": "4ccf2553a3e0b2f2",
+        "name": "",
+        "x": 760,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5a521e6350b0413b",
+        "type": "mqtt in",
+        "z": "ca6a7ac2d6048642",
+        "name": "",
+        "topic": "pcct1000/out3",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "92ce48d6ef7c84cf",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 210,
+        "y": 460,
+        "wires": [
+            [
+                "7027447569996c1f"
+            ]
+        ]
+    },
+    {
+        "id": "3f366b6c639108cc",
+        "type": "function",
+        "z": "ca6a7ac2d6048642",
+        "name": "",
+        "func": "\nmsg.topic = \"insert into relay1(data3) value('\"+msg.payload+\"')\";\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 460,
+        "wires": [
+            [
+                "6e3203df58fcedce"
+            ]
+        ]
+    },
+    {
+        "id": "7027447569996c1f",
+        "type": "function",
+        "z": "ca6a7ac2d6048642",
+        "name": "counter3",
+        "func": "// Define Varialbe and get stored slow value\n// if there is no stored value, then the value is 0\nvar counter3 = flow.get(\"counter3\") || 0\n\n// add 1 to the counter value\ncounter3 ++\n\n// save the counter value in the flow variable\nflow.set(\"counter3\",counter3)\n\n// set msg.payload to counter value\nmsg.payload = counter3\n\n//return the message object\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 460,
+        "wires": [
+            [
+                "3f366b6c639108cc"
+            ]
+        ]
+    },
+    {
+        "id": "ca1418e6c77fd4bd",
+        "type": "mysql",
+        "z": "ca6a7ac2d6048642",
+        "mydb": "4ccf2553a3e0b2f2",
+        "name": "",
+        "x": 400,
+        "y": 520,
+        "wires": [
+            [
+                "c45da9175d94c41f"
+            ]
+        ]
+    },
+    {
+        "id": "89ce7a2e6878eaaf",
+        "type": "ui_button",
+        "z": "ca6a7ac2d6048642",
+        "name": "",
+        "group": "83c0d24b403b84f0",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Data 확인",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "select data3 from relay1  order by data3 desc limit 1",
+        "topicType": "str",
+        "x": 200,
+        "y": 520,
+        "wires": [
+            [
+                "ca1418e6c77fd4bd"
+            ]
+        ]
+    },
+    {
+        "id": "c45da9175d94c41f",
+        "type": "function",
+        "z": "ca6a7ac2d6048642",
+        "name": "",
+        "func": "var y=[];\nvar x=[];\n\nfor(var i = 0;i<msg.payload.length;i++){\n    y.push(msg.payload[i].data3);\n   // x.push(msg.payload[i].date);\n}\n\nmsg.payload = [{\n    series:\"\",\n    data:[y],\n    labels:x\n    \n    \n}]\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 520,
+        "wires": [
+            [
+                "56ca04e12a7b73d5"
+            ]
+        ]
+    },
+    {
+        "id": "56ca04e12a7b73d5",
+        "type": "ui_chart",
+        "z": "ca6a7ac2d6048642",
+        "name": "",
+        "group": "83c0d24b403b84f0",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "label": "그래프",
+        "chartType": "bar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "20",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 730,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "85a28a04a8f1ee9c",
+        "type": "ui_button",
+        "z": "ca6a7ac2d6048642",
+        "name": "",
+        "group": "83c0d24b403b84f0",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "리셋",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "date",
+        "topic": "UPDATE `relay1` SET data3='0';",
+        "topicType": "str",
+        "x": 190,
+        "y": 580,
+        "wires": [
+            [
+                "2ea9f32d233cdc6e",
+                "ca1418e6c77fd4bd"
+            ]
+        ]
+    },
+    {
+        "id": "2ea9f32d233cdc6e",
+        "type": "change",
+        "z": "ca6a7ac2d6048642",
+        "name": "reset3",
+        "rules": [
+            {
+                "t": "set",
+                "p": "counter3",
+                "pt": "flow",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 350,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6766a0167f23a14a",
+        "type": "mysql",
+        "z": "ca6a7ac2d6048642",
+        "mydb": "4ccf2553a3e0b2f2",
+        "name": "",
+        "x": 760,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "73c51c53189ace95",
+        "type": "mqtt in",
+        "z": "ca6a7ac2d6048642",
+        "name": "",
+        "topic": "pcct1000/out4",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "92ce48d6ef7c84cf",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 210,
+        "y": 660,
+        "wires": [
+            [
+                "368fbd571233a337"
+            ]
+        ]
+    },
+    {
+        "id": "7c8b055d07fe53d9",
+        "type": "function",
+        "z": "ca6a7ac2d6048642",
+        "name": "",
+        "func": "\nmsg.topic = \"insert into relay1(data4) value('\"+msg.payload+\"')\";\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 660,
+        "wires": [
+            [
+                "6766a0167f23a14a"
+            ]
+        ]
+    },
+    {
+        "id": "368fbd571233a337",
+        "type": "function",
+        "z": "ca6a7ac2d6048642",
+        "name": "counter4",
+        "func": "// Define Varialbe and get stored slow value\n// if there is no stored value, then the value is 0\nvar counter4 = flow.get(\"counter4\") || 0\n\n// add 1 to the counter value\ncounter4 ++\n\n// save the counter value in the flow variable\nflow.set(\"counter4\",counter4)\n\n// set msg.payload to counter value\nmsg.payload = counter4\n\n//return the message object\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 660,
+        "wires": [
+            [
+                "7c8b055d07fe53d9"
+            ]
+        ]
+    },
+    {
+        "id": "2fd51136d7ccdce3",
+        "type": "mysql",
+        "z": "ca6a7ac2d6048642",
+        "mydb": "4ccf2553a3e0b2f2",
+        "name": "",
+        "x": 400,
+        "y": 720,
+        "wires": [
+            [
+                "4651f6e1049a0023"
+            ]
+        ]
+    },
+    {
+        "id": "b0a5a6e54626dbb8",
+        "type": "ui_button",
+        "z": "ca6a7ac2d6048642",
+        "name": "",
+        "group": "cb76ac9f7830d148",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Data 확인",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "select data4 from relay1  order by data4 desc limit 1",
+        "topicType": "str",
+        "x": 200,
+        "y": 720,
+        "wires": [
+            [
+                "2fd51136d7ccdce3"
+            ]
+        ]
+    },
+    {
+        "id": "4651f6e1049a0023",
+        "type": "function",
+        "z": "ca6a7ac2d6048642",
+        "name": "",
+        "func": "var y=[];\nvar x=[];\n\nfor(var i = 0;i<msg.payload.length;i++){\n    y.push(msg.payload[i].data4);\n   // x.push(msg.payload[i].date);\n}\n\nmsg.payload = [{\n    series:\"\",\n    data:[y],\n    labels:x\n    \n    \n}]\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 720,
+        "wires": [
+            [
+                "d3bcca3eb24371d8"
+            ]
+        ]
+    },
+    {
+        "id": "d3bcca3eb24371d8",
+        "type": "ui_chart",
+        "z": "ca6a7ac2d6048642",
+        "name": "",
+        "group": "cb76ac9f7830d148",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "label": "그래프",
+        "chartType": "bar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "20",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 730,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "735e316ec5e3513f",
+        "type": "ui_button",
+        "z": "ca6a7ac2d6048642",
+        "name": "",
+        "group": "cb76ac9f7830d148",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "리셋",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "date",
+        "topic": "UPDATE `relay1` SET data4='0';",
+        "topicType": "str",
+        "x": 190,
+        "y": 780,
+        "wires": [
+            [
+                "951278de6aeb1cab",
+                "2fd51136d7ccdce3"
+            ]
+        ]
+    },
+    {
+        "id": "951278de6aeb1cab",
+        "type": "change",
+        "z": "ca6a7ac2d6048642",
+        "name": "reset4",
+        "rules": [
+            {
+                "t": "set",
+                "p": "counter4",
+                "pt": "flow",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 350,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    }
+]
